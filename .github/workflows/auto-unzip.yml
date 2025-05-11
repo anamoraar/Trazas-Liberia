@@ -40,13 +40,16 @@ jobs:
           fi
 
           echo "Archivos .zip a procesar:"
-          echo "$zip_files_to_process" # Muestra la lista de archivos ZIP
+          echo "$zip_files_to_process" # Muestra la lista de archivos ZIP encontrados
 
-          unzipped_files_list_for_commit=() # Para el mensaje de commit
+          unzipped_files_list_for_commit=() # Para construir el mensaje de commit más adelante
 
-          # Itera sobre cada archivo ZIP encontrado
-          for zip_file in $zip_files_to_process; do
-            # Verifica que el archivo realmente exista en el checkout (por si acaso)
+          # Lee los nombres de archivo línea por línea en un array, conserva los espacios del nombre del archivo
+          mapfile -t zip_files_array <<< "$zip_files_to_process"
+
+          # Itera sobre cada archivo ZIP sin romper por espacios
+          for zip_file in "${zip_files_array[@]}"; do
+            # Verifica que el archivo realmente exista en el repo (por si acaso)
             if [ -f "$zip_file" ]; then
               echo "Procesando archivo ZIP: $zip_file"
               
@@ -54,10 +57,10 @@ jobs:
               parent_dir=$(dirname "$zip_file")
               base_name_no_ext=$(basename "$zip_file" .zip)
               
-              # Crea un directorio para la extracción con el nombre del ZIP (sin .zip)
+              # Define el directorio para la extracción con el nombre del ZIP (sin .zip)
               extraction_dir="$parent_dir/$base_name_no_ext"
               
-              # Asegura que el directorio de extracción no sea solo "." si el zip está en la raíz
+              # Ajusta si el archivo está en la raíz del repositorio
               if [[ "$parent_dir" == "." ]]; then
                 extraction_dir="$base_name_no_ext"
               fi
@@ -73,15 +76,17 @@ jobs:
               # echo "Eliminando archivo ZIP original: $zip_file"
               # rm "$zip_file"
               
-              unzipped_files_list_for_commit+=("$zip_file") # Añade a la lista para el mensaje de commit
+              # Guarda el nombre para usarlo en el mensaje de commit
+              unzipped_files_list_for_commit+=("$zip_file")
             else
-              echo "Advertencia: El archivo '$zip_file' listado en el diff no se encontró. Omitiendo."
+              echo "Advertencia: El archivo '$zip_file' listado no se encontró. Omitiendo."
             fi
           done
 
+          # Si se procesó al menos un archivo ZIP, prepara los outputs
           if [ ${#unzipped_files_list_for_commit[@]} -gt 0 ]; then
             echo "unzipped_something=true" >> $GITHUB_OUTPUT
-            # Convierte el array de archivos procesados a una cadena separada por comas
+            # Convierte el array a string separada por comas, cuidando los espacios
             processed_files_str=$(IFS=, ; echo "${unzipped_files_list_for_commit[*]}")
             echo "processed_zips=$processed_files_str" >> $GITHUB_OUTPUT
             echo "Archivos ZIP procesados: $processed_files_str"
@@ -104,7 +109,7 @@ jobs:
           # Añade todos los cambios (archivos descomprimidos y ZIPs eliminados si se usa 'rm')
           git add .
           
-          commit_message="Autounzip: se procesaron los archivos ZIP: ${{ steps.unzip_step.outputs.processed_zips }}"
+          commit_message="Archivos ZIP descomprimidos: ${{ steps.unzip_step.outputs.processed_zips }}"
           echo "Preparando commit con mensaje: $commit_message"
           
           # Verifica si hay cambios para hacer commit para evitar commits vacíos
