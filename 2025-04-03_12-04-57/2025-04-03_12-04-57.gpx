@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="OSMTracker for Android™ - https://github.com/labexp/osmtracker-android" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd ">
+	<metadata>
+		<name>2025-04-03_12-04-57</name>
+		<keywords>osmtracker</keywords>
+	</metadata>
+	<wpt lat="10.635281" lon="-85.441795">
+		<ele>1016.879638671875</ele>
+		<time>2025-04-03T18:05:17Z</time>
+		<name><![CDATA[Taxis]]></name>
+		<sat>17</sat>
+	</wpt>
+	<wpt lat="10.635504" lon="-85.441905">
+		<ele>1015.899658203125</ele>
+		<time>2025-04-03T18:05:37Z</time>
+		<name><![CDATA[Voice recording]]></name>
+		<link href="2025-04-03_18-05-37.3gpp">
+			<text>2025-04-03_18-05-37.3gpp</text>
+		</link>
+		<sat>17</sat>
+	</wpt>
+	<wpt lat="10.642122" lon="-85.451211">
+		<ele>1016.8411865234375</ele>
+		<time>2025-04-03T18:05:50Z</time>
+		<name><![CDATA[Terminal de buses]]></name>
+		<sat>21</sat>
+	</wpt>
+	<wpt lat="10.642504" lon="-85.451905">
+		<ele>1016.899658203125</ele>
+		<time>2025-04-03T18:05:59Z</time>
+		<name><![CDATA[Voice recording]]></name>
+		<link href="2025-04-03_18-05-59.3gpp">
+			<text>2025-04-03_18-05-59.3gpp</text>
+		</link>
+		<sat>17</sat>
+	</wpt>
+	<wpt lat="10.642138" lon="-85.451392">
+		<ele>1016.9411865234375</ele>
+		<time>2025-04-03T18:06:20Z</time>
+		<name><![CDATA[Terminal de Liberia]]></name>
+		<sat>21</sat>
+	</wpt>
+	<trk>
+		<name><![CDATA[Tracked with OSMTracker for Android™]]></name>
+		<trkseg>
+			<trkpt lat="10.0280927" lon="-84.20734984">
+				<ele>1020.8447265625</ele>
+				<time>2025-04-03T18:05:01Z</time>
+				<extensions>
+					<speed>0.0</speed>
+				</extensions>
+			</trkpt>
+			<trkpt lat="10.02811584" lon="-84.20737348">
+				<ele>1018.662353515625</ele>
+				<time>2025-04-03T18:05:02Z</time>
+				<extensions>
+					<speed>0.0</speed>
+				</extensions>
+			</trkpt>
+			<trkpt lat="10.02809952" lon="-84.20737908">
+				<ele>1019.71142578125</ele>
+				<time>2025-04-03T18:05:03Z</time>
+				<extensions>
+					<speed>0.0</speed>
+				</extensions>
+			</trkpt>
+			<trkpt lat="10.02808406" lon="-84.20736965">
+				<ele>1022.7724609375</ele>
+				<time>2025-04-03T18:05:04Z</time>
+				<extensions>
+					<speed>0.0</speed>
+				</extensions>
+			</trkpt>
+			<trkpt lat="10.02807607" lon="-84.20737802">
+				<ele>1023.7646484375</ele>
+				<time>2025-04-03T18:05:05Z</time>
+				<extensions>
+					<speed>0.0</speed>
+				</extensions>
+			</trkpt>
+			<trkpt lat="10.02807843" lon="-84.20736813">
+				<ele>1022.191162109375</ele>
+				<time>2025-04-03T18:05:06Z</time>
+				<extensions>
+					<speed>0.0</speed>
+				</extensions>
+			</trkpt>
+			<trkpt lat="10.02809727" lon="-84.20738212">
+				<ele>1019.1500244140625</ele>
+				<time>2025-04-03T18:05:07Z</time>
+				<extensions>
+					<speed>0.0</speed>
+				</extensions>
+			</trkpt>
+		</trkseg>
+	</trk>
+</gpx>
