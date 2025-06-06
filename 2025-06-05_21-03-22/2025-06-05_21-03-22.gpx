@@ -4,19 +4,19 @@
 		<name>2025-06-05_21-03-22</name>
 		<keywords>osmtracker</keywords>
 	</metadata>
-	<wpt lat="10.619106" lon="-85.432885">
+	<wpt lat="10.633839" lon="-85.425891">
 		<ele>1001.777587890625</ele>
 		<time>2025-06-06T03:03:31Z</time>
 		<name><![CDATA[Terminal de buses]]></name>
 		<sat>27</sat>
 	</wpt>
-	<wpt lat="10.619179" lon="-85.432981">
+	<wpt lat="10.633842" lon="-85.426839">
 		<ele>1002.3389892578125</ele>
 		<time>2025-06-06T03:03:40Z</time>
 		<name><![CDATA[La terminal de buses tiene restaurantes y tiendas.]]></name>
 		<sat>28</sat>
 	</wpt>
-	<wpt lat="10.619189" lon="-85.432912">
+	<wpt lat="10.633841" lon="-85.426742">
 		<ele>1002.714599609375</ele>
 		<time>2025-06-06T03:08:27Z</time>
 		<name><![CDATA[Photo]]></name>
@@ -25,7 +25,7 @@
 		</link>
 		<sat>21</sat>
 	</wpt>
-	<wpt lat="10.619179" lon="-85.432981">
+	<wpt lat="10.633839" lon="-85.426833">
 		<ele>1002.6318359375</ele>
 		<time>2025-06-06T03:09:05Z</time>
 		<name><![CDATA[Photo]]></name>
@@ -34,7 +34,7 @@
 		</link>
 		<sat>24</sat>
 	</wpt>
-	<wpt lat="10.619189" lon="-85.432912">
+	<wpt lat="10.633839" lon="-85.426331">
 		<ele>1002.5491943359375</ele>
 		<time>2025-06-06T03:09:30Z</time>
 		<name><![CDATA[Voice recording]]></name>
@@ -43,7 +43,7 @@
 		</link>
 		<sat>29</sat>
 	</wpt>
-	<wpt lat="10.02814663" lon="-84.20748044">
+	<wpt lat="10.633839" lon="-85.426335">
 		<ele>1002.5360107421875</ele>
 		<time>2025-06-06T03:09:38Z</time>
 		<name><![CDATA[Voice recording]]></name>
@@ -57,6 +57,12 @@
 		<time>2025-06-06T03:10:20Z</time>
 		<name><![CDATA[Estación Tren]]></name>
 		<sat>27</sat>
+	</wpt>
+	<wpt lat="10.632828" lon="-85.426854">
+		<ele>1002.3389892578125</ele>
+		<time>2025-06-06T03:12:40Z</time>
+		<name><![CDATA[Estacion de tren descripción 1.]]></name>
+		<sat>28</sat>
 	</wpt>
 	<wpt lat="10.6327989" lon="-85.426865">
 		<ele>1002.41943359375</ele>
@@ -73,9 +79,15 @@
 		<name><![CDATA[Estación Tren]]></name>
 		<sat>28</sat>
 	</wpt>
+	<wpt lat="10.632828" lon="-85.426854">
+		<ele>1002.3389892578125</ele>
+		<time>2025-06-06T03:12:40Z</time>
+		<name><![CDATA[Estacion de tren descripción 2.]]></name>
+		<sat>28</sat>
+	</wpt>
 	<wpt lat="10.632136" lon="-85.426925">
 		<ele>999.843994140625</ele>
-		<time>2025-06-06T03:11:35Z</time>
+		<time>2025-06-06T03:15:35Z</time>
 		<name><![CDATA[Photo]]></name>
 		<link href="2025-06-05_21-11-35.jpg">
 			<text>2025-06-05_21-11-35.jpg</text>
